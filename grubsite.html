@@ -1,0 +1,54 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Juice WRLD Tribute</title>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora:ital,wght@1,700&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+
+      <!-- font switching animation for the Landding page text.-->
+      <style>
+        @keyframes font-switch {
+          0%, 33% {
+            font-family: 'Roboto', sans-serif;
+          }
+          33.1%, 66% {
+            font-family: 'Lora', serif;
+          }
+          66.1%, 100% {
+            font-family: 'Space Mono', monospace;
+          }
+        }
+
+        .animate-font {
+          animation: font-switch 6s infinite steps(1, end);
+        }
+      </style>    
+    </head>
+    <!-- Gradiant Background-->
+    <body class="bg-gradient-to-b from-[#fce4ec] via-[#f7cadb] to-[#d4c3da] flex items-center justify-center min-h-screen">
+
+      <!-- Polaroid Container -->
+      <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center pl-4 pr-4 pt-5 pb-2 rotate-[4deg]">
+
+        <!-- Juice WRLD's Image -->
+        <img 
+          src="https://www.clashmusic.com/wp-content/uploads/2019/12/112_-OnlineImagery73_1_0.jpg" 
+          alt="Juice WRLD"
+          class="w-full h-76 object-cover rounded-lg" />
+
+        <!-- Tombstone (cool name + text underneath it) -->
+        <div class="p-4">
+          <h1 class="text-3xl font-bold uppercase animate-font">Juice WRLD</h1>
+          <p class="mt-1 text-sm text-gray-600">RIP Legend, 1999 to December 8th 2019</p>
+        </div>
+      </div>
+    </body>
+    </html>
+
+  
