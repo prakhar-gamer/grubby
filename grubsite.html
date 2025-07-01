@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -11,8 +11,13 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora:ital,wght@1,700&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
 
-      <!-- font switching animation for the Landding page text.-->
+      <!-- font switching animation for the Landding page text and the cool cursor.-->
       <style>
+
+        body {
+          cursor: url('https://raw.githubusercontent.com/googlefonts/noto-emoji/main/png/128/emoji_u1f3b5.png'), pointer;
+        }
+
         @keyframes font-switch {
           0%, 33% {
             font-family: 'Roboto', sans-serif;
@@ -30,25 +35,202 @@
         }
       </style>    
     </head>
+
     <!-- Gradiant Background-->
-    <body class="bg-gradient-to-b from-[#fce4ec] via-[#f7cadb] to-[#d4c3da] flex items-center justify-center min-h-screen">
+    <body class="bg-gradient-to-b from-[#fce4ec] via-[#f7cadb] to-[#d4c3da]  items-center justify-center min-h-screen">
+
+      <!-- Navigation Bar -->
+      <ul class="flex top-0 w-fit mx-auto justify-center p-2 md:p-4">
+    <div class="bg-gradient-to-b from-[#7B4019] to-[#954C2E] rounded-full p-2 md:p-3 shadow-lg items-center text-white font-semibold">
+        <a href="#home" class=" px-2 py-1 md:px-4 md:py-2 hover:bg-[#CA7842] rounded-full transition-colors duration-200">
+            <span class="text-[8px] md:text-[18px]">Home</span>
+        </a>
+        <a href="#life" class="space-x-1 px-2 py-1 md:px-3 md:py-2 hover:bg-[#CA7842] rounded-full transition-colors duration-200">
+            <span class="text-[8px] md:text-base">Life</span>
+        </a>
+        <a href="#Discography" class="space-x-1 px-2 py-1 md:px-1 md:py-2 hover:bg-[#CA7842] rounded-full transition-colors duration-200">
+            <span class="text-[8px] md:text-base">Discography</span>
+        </a>
+        <a href="#Colage" class="space-x-1 px-2 py-1 md:px-3 md:py-2 hover:bg-[#CA7842] rounded-full transition-colors duration-200">
+            <span class="text-[8px] md:text-base">Colage</span>
+        </a>
+        <a href="#FAQ" class="space-x-1 px-2 py-1 md:px-3 md:py-2 hover:bg-[#CA7842] rounded-full transition-colors duration-200">
+            <span class="text-[8px] md:text-base">FAQ</span>
+        </a>
+    </div>
+</ul>
 
       <!-- Polaroid Container -->
-      <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center pl-4 pr-4 pt-5 pb-2 rotate-[4deg]">
+       <span id="home"></span>  
+      <section class="pt-10 flex items-center justify-center">
+        <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center pl-4 pr-4 pt-5 pb-2 rotate-[4deg]">
 
-        <!-- Juice WRLD's Image -->
-        <img 
-          src="https://www.clashmusic.com/wp-content/uploads/2019/12/112_-OnlineImagery73_1_0.jpg" 
-          alt="Juice WRLD"
-          class="w-full h-76 object-cover rounded-lg" />
+          <!-- Juice WRLD's Image -->
+          <img 
+            src="https://www.clashmusic.com/wp-content/uploads/2019/12/112_-OnlineImagery73_1_0.jpg" 
+           alt="Juice WRLD"
+           class="w-full h-76 rounded-lg" />
 
-        <!-- Tombstone (cool name + text underneath it) -->
-        <div class="p-4">
-          <h1 class="text-3xl font-bold uppercase animate-font">Juice WRLD</h1>
-          <p class="mt-1 text-sm text-gray-600">RIP Legend, 1999 to December 8th 2019</p>
+         <!-- Tombstone (cool name + text underneath it) -->
+          <div class="p-4">
+            <h1 class="text-3xl font-bold uppercase animate-font">Juice WRLD</h1>
+            <p class="mt-1 text-sm text-gray-600">RIP Legend, 1999 to December 8th 2019</p>
+         </div>
         </div>
-      </div>
+      </section> 
+
+      <!-- His life summery-->
+      <section class="mt-20 flex items-center justify-center">
+        <span id="life">
+          <div class="container mx-auto bg-transparent rounded-lg overflow-hidden">
+              <p class="text-center text-black md:text-[50px] text-[30px] pr-4 pl-4 pt-4 pb-4">His Life</p>
+
+              <!-- MultiRow Summery -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text text-center">
+
+                <!-- Early Life -->
+                  <div class="bg-white p-6 border border-[#FFBF78] rounded-lg hover:shadow-lg">
+                      <h2 class="text-[24px] font-bold md:text-[18px]"> Early Life</h2>
+                      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Early Life Icon" class="w-16 h-16 mx-auto mt-2 mb-4" />
+                    <p class="text-gray-600 mt-2"> Juice WRLD was a kid who loved video games, and enjoyed listening to music. He had a young passion too freestyle, and want to create at a while.</p>
+                  </div>
+
+                  <!-- The Come Up -->
+                  <div class="bg-white p-6 border border-[#FFBF78] rounded-lg hover:shadow-lg">
+                    <h2 class="text-[24px] font-bold md:text-[18px]"> His Come Up</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/608/608336.png" alt="Early Life Icon" class="w-16 h-16 mx-auto mt-2 mb-4" />
+                    <p class="text-gray-600 mt-2"> Juice WRLD dropped Goodbye and Good Ridance and took over the world, he charted globally and made hit after hit.</p>
+                  </div>    
+
+                  <!-- His Prime/Death--> 
+                  <div class="bg-white p-6 border border-[#FFBF78] rounded-lg hover:shadow-lg">
+                    <h2 class="text-[24px] font-bold md:text-[18px]"> His Prime/Death</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2250/2250547.png" alt="Early Life Icon" class="w-16 h-16 mx-auto mt-2 mb-4" />
+                    <p class="text-gray-600 mt-2"> He made a bunch of hits, and recorded alot of unrealesed music. He ended up dying due to a overdose, but he left his mark on the world.</p>
+                  </div>
+          </div>
+        </span>
+      </section>
+      <!-- CD cover for all the albums-->
+       
+      <p class="text-center text-bold text-black md:text-[50px] text-[30px] pr-4 pl-4 pt-20">His BEST Albums </p>
+      <p class="text-center text-black text-[20px] md:text-[10] pr-4 pl-4 pt-4">Hover over the covers to reveal their designs!</p>
+      <section class="mt-5 flex items-center justify-center">  
+        <span id="Discography"></span>  
+          <div class="flex flex-nowrap overflow-x-auto gap-4 pl-8 pr-8 pt-4">
+
+            <!-- Goodbye and Good Ridance-->
+             <div class="flex flex-col  flex-shrink-0 items-center">
+              <div class="relative w-64 h-64 rounded-full shadow-lg overflow-hidden transition duration-300 ease-in-out filter blur-md hover:blur-none"> 
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Goodbye_%26_Good_Riddance_Album_Cover.jpg" alt="Goodbye and Good Riddance" class="w-full h-full object-cover ">
+              </div>
+              <p class="whitespace-nowrap mt-2 text-lg font-semibold"><i>Goodbye and Good Riddance</i></p> 
+            </div>
+
+            <!-- Wrld on Drugs-->
+             <div class="flex flex-col flex-shrink-0 items-center">
+              <div class="relative w-64 h-64 rounded-full shadow-lg overflow-hidden transition duration-300 ease-in-out filter blur-md hover:blur-none"> 
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Wrld_on_Drugs.jpg" alt="World on drugs" class="w-full h-full object-cover ">
+              </div>
+              <p class="whitespace-nowrap mt-2 text-lg font-semibold"><i>Wrld on Drugs</i></p> 
+            </div>
+
+            <!-- Death Race for Love-->
+             <div class="flex flex-col flex-shrink-0 items-center">
+              <div class="relative w-64 h-64 rounded-full shadow-lg overflow-hidden transition duration-300 ease-in-out filter blur-md hover:blur-none"> 
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Juice_Wrld_-_Death_Race_for_Love.png" alt="Death Race For Love" class="w-full h-full object-cover ">
+              </div>
+              <p class="whitespace-nowrap mt-2 text-lg font-semibold"><i>Death Race For Love</i></p> 
+            </div>
+
+             <!-- Goodbye and Good Ridance-->
+             <div class="flex flex-col  flex-shrink-0 items-center">
+              <div class="relative w-64 h-64 rounded-full shadow-lg overflow-hidden transition duration-300 ease-in-out filter blur-md hover:blur-none"> 
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Juice_Wrld_-_Legends_Never_Die.png" alt="Legends Never Die" class="w-full h-full object-cover ">
+              </div>
+              <p class="whitespace-nowrap mt-2 text-lg font-semibold"><i>Legends Never Die</i></p> 
+            </div>
+
+             <!-- Goodbye and Good Ridance-->
+             <div class="flex flex-col  flex-shrink-0 items-center">
+              <div class="relative w-64 h-64 rounded-full shadow-lg overflow-hidden transition duration-300 ease-in-out filter blur-md hover:blur-none"> 
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Juice_Wrld_-_Fighting_Demons.png" alt="Fighting Demons" class="w-full h-full object-cover ">
+              </div>
+              <p class="whitespace-nowrap mt-2 text-lg font-semibold"><i>Fighting Demons</i></p> 
+            </div>
+          </div> 
+        </div>    
+      </section>
+        <span id="Colage"></span>
+     <p class="text-center text-bold text-black md:text-[50px] text-[30px] pr-4 pl-4 pt-20">Photos</p>
+      <section class="pt-10 flex items-center justify-center">
+
+        <!-- Image 1 -->
+        <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center p-3 rotate-[4deg]">
+          <img 
+            src="https://mrwallpaper.com/images/high/cool-juice-wrld-singing-during-a-concert-kby8szud162m6rmr.webp" 
+           alt="Juice WRLD"
+           class="w-full h-full rounded-lg" />
+        </div>
+
+        <!-- Image 2 -->
+        <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center p-3 rotate-[12deg]">
+          <img 
+            src="https://i.pinimg.com/736x/7d/f4/8c/7df48c0d81be87f62e466c76ce1af02d.jpg" 
+           alt="Juice WRLD"
+           class="w-full h-76 rounded-lg" />
+        </div>
+
+        <!-- Image 3 -->
+        <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center p-3 rotate-[14deg]">
+          <img 
+            src="https://i.pinimg.com/736x/9f/f2/8b/9ff28b1ae8c91e6dff2bd6855831775a.jpg" 
+           alt="Juice WRLD"
+           class="w-full h-76 rounded-lg" />
+        </div>
+
+        <!-- Image 4 -->
+        <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center p-3 rotate-[7deg]">
+          <img 
+            src="https://i.pinimg.com/736x/28/20/58/282058338d07c4b6e12067d36ad79217.jpg" 
+           alt="Juice WRLD"
+           class="w-full h-76 rounded-lg" />
+        </div>
+
+        <!-- Image 5 -->
+        <div class="bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 overflow-hidden w-80 text-center p-3 rotate-[9deg]">
+          <img 
+            src="https://i.pinimg.com/736x/91/03/79/910379580171a2d4132663bb0dffcf3d.jpg" 
+           alt="Juice WRLD"
+           class="w-full h-76 rounded-lg" />
+        </div>
+      </section>
+      
+      <!-- FAQ Section -->
+
+      <section> 
+        <p class="text-center text-bold text-black md:text-[50px] text-[30px] pr-4 pl-4 pt-20">FAQ</p>
+        <span id="FAQ"></span>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <div>
+            <!-- Question 1-->
+            <div>
+              <h3 class="md:text-[30px] sd:text-[18px] font-semibold">1. What is Juice WRLD's real name?</h3>
+              <p class="md:text-[18px] sd:text-[12px] text-gray">Juice WRLD's real name was Jarad Higgins.</p>
+            </div>  
+            <!-- Question 2-->
+            <div>
+              <h3 class="md:text-[30px] sd:text-[18px] font-semibold">2. When did Juice WRLD pass away?</h3>
+              <p class="md:text-[18px] sd:text-[12px] text-gray">He passed away on December 8, 2019.</p>
+            </div>
+            <!-- Question 3-->
+            <div>
+              <h3 class="md:text-[30px] sd:t  ext-[18px] font-semibold">3. What are some of his most popular songs?</h3>
+              <p class="md:text-[18px] sd:text-[12px] text-gray">Some of his most popular songs include "Lucid Dreams," "All
+      </section> 
+
+  <!-- Footer -->
+      <footer class=" mt-8 bg-blue-500 rounded-lg shadow-lg flex "></footer>
+        <p class="text-gray-600 md:text-[30px] text-[15px] items-center text-center justify-center">Made in dedication too Juice WRLD, by Prakhar :heart:</p>
     </body>
     </html>
-
-  
